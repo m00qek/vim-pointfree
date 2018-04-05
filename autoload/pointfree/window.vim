@@ -17,13 +17,12 @@ function! pointfree#window#apply(target_window, target_line)
 endfunction
 
 function! pointfree#window#close(window)
-  silent pclose
   silent windo call s:close_if_pointfree(winnr())
   call win_gotoid(a:window)
 endfunction
 
 function! pointfree#window#open(current_window, current_line, suggestions)
-  execute '10new'
+  execute 'silent botright 10new'
   call setline(1, a:suggestions)
 
   setlocal readonly nomodifiable
