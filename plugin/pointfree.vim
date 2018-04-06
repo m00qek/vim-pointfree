@@ -35,4 +35,3 @@ function! pointfree#optmized(expression)
 
   echo l:suggestions
 endfunction
-
