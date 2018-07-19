@@ -16,5 +16,5 @@ Plug 'm00qek/vim-pointfree'
 add something like the following on your vimrc
 
 ```viml
-autocmd FileType haskell nnoremap <buffer> <silent> <Leader>. :call pointfree#suggestions()<CR>
+nnoremap <silent> <Leader>. :call pointfree#suggestions()<CR>
 ```
